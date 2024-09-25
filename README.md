@@ -1,37 +1,41 @@
-Automated LinkedIn Outreach Tool
-Project Description
+# Automated LinkedIn Outreach Tool
+
+## Project Description
+
 This project automates the extraction of LinkedIn profile data from a Google Sheet, crafts personalized outreach messages using OpenAI, and facilitates email delivery to potential leads. The primary focus is on introducing a business automation solution and scheduling demonstrations with interested clients.
 
-Key Features
-Profile Data Extraction: Automatically scrapes vital information such as names, job titles, companies, and emails from LinkedIn profiles.
-Custom Message Generation: Utilizes OpenAI's GPT-3.5-turbo model to produce tailored outreach messages.
-Automated Emailing: Sends the personalized messages directly via email.
-Google Sheets Integration: Retrieves LinkedIn profile URLs from a specified Google Sheet.
-Prerequisites
+## Key Features
+
+- **Profile Data Extraction:** Automatically scrapes vital information such as names, job titles, companies, and emails from LinkedIn profiles.
+- **Custom Message Generation:** Utilizes OpenAI's GPT-3.5-turbo model to produce tailored outreach messages.
+- **Automated Emailing:** Sends the personalized messages directly via email.
+- **Google Sheets Integration:** Retrieves LinkedIn profile URLs from a specified Google Sheet.
+
+## Prerequisites
+
 Before using this tool, ensure you have the following:
 
-Google Sheets API Setup:
+1. **Google Sheets API Setup:**
+   - Activate the Google Sheets API and download the `credentials.json` file from the Google Cloud Console.
+   - Place the credentials file in the root folder of your project.
 
-Activate the Google Sheets API and download the credentials.json file from the Google Cloud Console.
-Place the credentials file in the root folder of your project.
-Selenium WebDriver:
+2. **Selenium WebDriver:**
+   - Download the correct version of ChromeDriver for your operating system.
+   - Verify that the ChromeDriver path is correctly specified in your script.
 
-Download the correct version of ChromeDriver for your operating system.
-Verify that the ChromeDriver path is correctly specified in your script.
-OpenAI API Key:
+3. **OpenAI API Key:**
+   - Acquire an API key from [OpenAI](https://platform.openai.com/account/api-keys) and insert it into your script.
 
-Acquire an API key from OpenAI and insert it into your script.
-SMTP Configuration:
+4. **SMTP Configuration:**
+   - Use an email account (e.g., Gmail) that has SMTP enabled for sending emails.
+   - For Gmail, ensure that "Less secure app access" is enabled or use OAuth2 for more secure authentication.
 
-Use an email account (e.g., Gmail) that has SMTP enabled for sending emails.
-For Gmail, ensure that "Less secure app access" is enabled or use OAuth2 for more secure authentication.
-Installation Steps
-Clone the Repository:
+## Installation Steps
 
-bash
-Copy code
-git clone https://github.com/yourusername/repo-name.git
-cd repo-name
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/repo-name.git
+   cd repo-name
 Install Required Libraries: Create a requirements.txt file with the following content:
 
 Copy code
